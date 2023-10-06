@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Designe & Construction Expense Tracker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+    
+    <h1>Urban Designe & Construction Expense Tracker</h1>
+
+    <form id="productForm">
+        <label for="productSelect">Select Product:</label>
+        <select id="productSelect">
+            <option value="Brick">Brick</option>
+
+<option value="Steel">Steel</option>
+<option value="Wood">Wood</option>
+<option value="Cement">Cement</option>
+<option value="Glass">Glass</option>
+<option value="Asphalt">Asphalt</option>
+<option value="Stone">Stone</option>
+<option value="Plaster">Plaster</option>
+<option value="Masonry Units">Masonry Units</option>
+<option value="Roofing Materials">Roofing Materials</option>
+<option value="Insulation Materials">Insulation Materials</option>
+<option value="Drywall">Drywall</option>
+<option value="Rebar">Rebar</option>
+<option value="Plywood">Plywood</option>
+<option value="Aluminum">Aluminum</option>
+<option value="Plastic">Plastic</option>
+<option value="Ceramic Tiles">Ceramic Tiles</option>
+<option value="Aggregate">Aggregate</option>
+<option value="Scaffolding">Scaffolding</option>
+<option value="Fiberglass">Fiberglass</option>
+<option value="Rammed Earth">Rammed Earth</option>
+<option value="Bamboo">Bamboo</option>
+<option value="Rubber">Rubber</option>
+<option value="Adhesives and Sealants">Adhesives and Sealants</option>
+<option value="Fireproofing Materials">Fireproofing Materials</option>
+<option value="Pre-cast Concrete">Pre-cast Concrete</option>
+<option value="Soundproofing Materials">Soundproofing Materials</option>
+<option value="PVC (Polyvinyl Chloride)">PVC (Polyvinyl Chloride)</option>
+<option value="Ferrocement">Ferrocement</option>
+
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+
+<div id="flex">
+        <input type="button" value="Add Product" onclick="addProduct()"><br><br>
+        <input type="button" value="Generate Excel" onclick="generateExcel()">
+    </div>
+    </form>
+    
+
+    <h2>Product List</h2>
+    <ul id="productList"></ul>
+
+    <script src="./JavaScript/server.js"></script>
+</body>
+</html>
